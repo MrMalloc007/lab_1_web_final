@@ -52,7 +52,7 @@ $("#mainform").submit(function (e){     // чекнуть     e - создаем
 
 function sendRequest(form, xxx, yyy, rrr) {
     $.ajax({
-        url: "php/actionn.php",
+        url: "/php/actionn.php",
         method: "POST",
         dataType: "json",
         data: 'CORX=' + xxx + '&CORY=' + yyy + '&CORR=' + rrr + '&time=' + new Date().getTimezoneOffset(),
